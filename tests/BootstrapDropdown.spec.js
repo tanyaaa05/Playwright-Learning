@@ -9,7 +9,6 @@ test('Bootstrap dropdown', async ({ page }) => {
 
     // Click dropdown item
     await page.locator('.dropdown-menu .dropdown-item').first().click();
-    // await page.locator('.dropdown-item', { hasText: 'v5.2.3' }).click();
 
+    await page.waitForTimeout(3000);
 });
-
