@@ -11,9 +11,9 @@ test('Keyboard Actions', async ({ page }) => {
     // Ctrl + C -> Copy the text
     await page.keyboard.press('Control+C')
 
-    // Tab
+    // Press Tab to move the focus to the next text area
     await page.keyboard.press('Tab');
-    
+
     // Ctrl + V -> Paste the text
     await page.keyboard.press('Control+V')
 
