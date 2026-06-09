@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 let page; // Declare the page variable at the top level
 
 test.beforeAll(async ({ browser }) => {
-    page = await browser.newPage(); // Initialize the page variable before each test
+    page = await browser.newPage(); // browser.newPage() is used to open a new browser tab or page instance in Playwright for test execution.
 
     await page.goto('https://www.demoblaze.com/index.html');
 
